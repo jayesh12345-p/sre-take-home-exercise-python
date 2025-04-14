@@ -10,7 +10,7 @@ and domain = endpoint["url"].split("//")[-1].split("/")[0] will get the incorrec
 5. Domain didn't ignore port number, we should take care of that. A sample test is added to sample.yaml and "localhost has 100% availability percentage" is returned, The fixed code is the following:
         domain = endpoint["url"].split("//")[1].split("/")[0].split(":")[0]
 
-
+How to install the code: You can download the files as a folder from github and open the folder with VS code. Make sure you do pip install pyyaml and pip install requests to install all libraries.
 
 How to run/stop: In the commander, type "python main.py sample.yaml" or any other yaml files. "ctrl+c" to stop the command.
 
