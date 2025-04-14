@@ -14,6 +14,9 @@ How to install the code: You can download the files as a folder from github and 
 
 How to run/stop: In the commander, type "python main.py sample.yaml" or any other yaml files. "ctrl+c" to stop the command.
 
+How to create a test: You need to create an API to take the request and making changes to yaml. I did that with the localhost case and I can get "localhost has 100% availability percentage"
+as a result. 
+
 Expected result: We are expected to see "xxx has y% availability percentage every 15 seconds." for every different domain.
 
 The results are done independently with a little online search
