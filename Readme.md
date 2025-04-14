@@ -7,7 +7,7 @@ Problem identified and solution(Ordered by the time the problem is discoverd):
 4. Domain name is read incorrectly, certain URL can have two continuous "//" based on google search. https://example.com//dashboard is consider a valid URL 
 and domain = endpoint["url"].split("//")[-1].split("/")[0] will get the incorrect result. Here's the fix :
         domain = endpoint["url"].split("//")[1].split("/")[0]
-5. Domain didn't ignore port number, we should take care of that. A sample test is added to sample.yaml and "localhost has 100% availability percentage" is returned, The fixed code is the following:
+5. Domain didn't ignore port number, we should take care of that. A sample test is added to sample.yaml and "localhost has 0% availability percentage" is returned, The fixed code is the following:
         domain = endpoint["url"].split("//")[1].split("/")[0].split(":")[0]
 
 How to install the code: You can download the files as a folder from github and open the folder with VS code. Make sure you do pip install pyyaml and pip install requests to install all libraries.
